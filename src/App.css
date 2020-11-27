@@ -1,38 +1,432 @@
-.App {
-  text-align: center;
-}
+/* font-family: 'Tinos', serif;
+font-family: 'Yantramanav', sans-serif; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Tinos&family=Yantramanav:wght@900&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ___________________________ HeaderHome*/
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header {
+  margin-top: -5em;
+  background: url(./assets/img/bar1.png) center / cover no-repeat;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Yantramanav", sans-serif;
+}
+#header-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 70vh;
+  line-height: 80px;
+  margin-top: 4%;
+}
+#header-div h2 {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 7rem;
+}
+#header-div h1 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+  font-size: 12rem;
+}
+/*__________________________Navigation */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: black;
+
+  height: 7vh;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+#navigation li {
+  list-style: none;
+}
+
+/*  __________________ SectionHome*/
+#SectionHome {
+  background-color: #212121;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  font-family: "Tinos", serif;
+}
+#about_text {
+  color: #ffffff;
+  margin-left: 7%;
+  width: 30%;
+}
+#about_text p {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  width: 60%;
+}
+#about_text h1 {
+  font-size: 3rem;
+}
+#about_text button {
+  padding: 3% 5%;
+  background-color: #bb7043;
+  border-radius: 10px;
+}
+
+/* __________________ Section2Home */
+#Section2Home {
+  background-color: #bb7043;
+  height: 100vh;
+}
+.text {
+  font-size: 25px;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 7%;
+  text-transform: uppercase;
+  font-family: "Tinos", serif;
+}
+#Section2Home-flex {
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+#Jive {
+  background: url(./assets/img/Rectangle.png) left/cover no-repeat;
+  height: 35vh;
+  color: #ffffff;
+  font-family: "Yantramanav", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 6%;
+}
+#afte {
+  background: url(./assets/img/Rectangle1.png) center / cover no-repeat;
+  height: 35vh;
+  color: #ffffff;
+  font-family: "Yantramanav", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 6%;
+}
+#dance {
+  background: url(./assets/img/Rectangle2.png) right / cover no-repeat;
+  height: 35vh;
+  color: #ffffff;
+  font-family: "Yantramanav", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 6%;
+}
+#Section2Home-flex h4 {
+  color: #ffffff;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.5rem;
+}
+#Section2Home-flex p {
+  width: 60%;
+  font-size: 16px;
+  font-family: "Tinos", serif;
+}
+#Section2Home-flex p:nth-of-type(1) {
+  margin-top: 4%;
+}
+
+/* __________________Section3Home */
+
+#Section3Home {
+  background: url(./assets/img/hand.png) right / 60% no-repeat;
+  background-color: #212121;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+}
+#Section3Home_text {
+  margin-left: 15%;
+}
+#Section3Home_text p:nth-of-type(1) {
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+#Section3Home_text h1:nth-of-type(1) {
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 6rem;
+  width: 50%;
+  line-height: 90px;
+  margin-bottom: 2%;
+}
+#Section3Home_text p:nth-of-type(2) {
+  width: 30%;
+  font-size: 30px;
+  margin-bottom: 2%;
+  font-family: "Tinos", serif;
+}
+#Section3Home_text button {
+  padding: 1% 3%;
+  background-color: #bb7043;
+  border-radius: 10px;
+}
+
+/*  __________________Section4Home */
+#Section4Home {
+  background-color: #212121;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+}
+#Jomaica {
+  width: 50%;
+  border: 0.5px solid #7f7f7f;
+}
+#Section4Home img {
+  margin-left: 90%;
+  margin-top: 6%;
+}
+#JackDaniels {
+  width: 50%;
+
+  border: 0.5px solid #7f7f7f;
+}
+#Jomaica_img {
+  background: url(./assets/img/gin\ 1.png) center 60% no-repeat;
+  height: 60vh;
+  /* margin-top: 10%; */
+  margin-bottom: 2%;
+}
+#JackDaniels_img {
+  background: url(./assets/img/jack\ 1.png) center 60% no-repeat;
+  height: 60vh;
+  /* margin-top: 10%; */
+  margin-bottom: 2%;
+}
+#Jomaica h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 67%;
+  margin-left: 16.5%;
+}
+#JackDaniels h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 68%;
+  margin-left: 16%;
+}
+#Jomaica p {
+  text-align: center;
+  margin-top: 4%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#JackDaniels p {
+  text-align: center;
+  margin-top: 4%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* __________________Footer1 */
+#Footer1 {
+  background-color: #212121;
+  height: 40vh;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  border: 0.5px solid #7f7f7f;
+}
+
+#Footer1_img {
+  margin-top: 6%;
+  margin-left: 10%;
+}
+#Footer1_tabel {
+  margin-top: 6%;
+  width: 50%;
+  margin-left: 25%;
+  line-height: 25px;
+}
+table {
+  width: 70%;
+}
+table tr:nth-of-type(1) {
+  height: 5vh;
+  color: #bb7043;
+}
+
+/* __________________Footer2 */
+#Footer2 {
+  background-color: #212121;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Footer2_img {
+  background: url(./assets/img/Group1.png) center/ 40% no-repeat;
+  height: 40vh;
+  width: 60%;
+  margin-left: 20%;
+}
+#SocialMedia {
+  width: 20%;
+}
+#SocialMedia {
+  width: 20%;
+}
+#SocialMedia img {
+  margin-left: 4%;
+}
+
+/* _______________________SectionContact- */
+
+#sectioncontact {
+  width: 100%;
+  display: flex;
+  background: #bb7043;
+  justify-content: space-between;
+}
+#sectioncontact h1 {
+  color: white;
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+#sectioncontact div {
+  padding-top: 16em;
+  padding-left: 8em;
+}
+#sectioncontact h6 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+/* _____________________SectionContact2 */
+
+#sectioncontact2 {
+  text-align: center;
+  background: url(./assets/img/Rectanglele5.png) center / cover no-repeat;
+  height: 80vh;
+}
+#sectioncontact2 div {
+  margin: 0 35em;
+  height: 1vh;
+  padding-top: 20em;
+}
+#sectioncontact2 h1 {
+  font-size: 4em;
+  padding-top: 1em;
+  background: #c4c4c4;
+  height: 20vh;
+}
+
+/* ________________-SectionContact3 */
+
+#sectioncontact3 {
+  width: 100%;
+  display: flex;
+  background: #bb7043;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+input {
+  font-size: 1em;
+  width: 100%;
+  height: 2em;
+  margin-bottom: 4em;
+}
+form {
+  padding-top: 5em;
+}
+::placeholder {
+  color: black;
+  font-size: 22px;
+}
+#klein-flex {
+  display: flex;
+  justify-content: space-between;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#big-div {
+  padding-top: 7em;
+}
+#sectioncontact3 h6 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+#sectioncontact3 h1 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: white;
+}
+#sectioncontact3 #buttun {
+  width: 20%;
+  color: white;
+  background: #000;
+  margin-top: 3em;
+  height: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ________________SectionShop */
+
+#sectionshop {
+  background: url(./assets/img/Rectangleopen.png) center/ 100% no-repeat;
+  height: 79vh;
+}
+
+/* ____________________SectionShop2 */
+
+#sectionshop2 {
+  background: #bb7043;
+  height: 80vh;
+  text-align: center;
+}
+#sectionshop2 h1 {
+  font-size: 7em;
+  padding-top: 3em;
+}
+
+/* _______________Entertainment+Event */
+#Entertainment,
+#Event {
+  background: #bb7043;
+  text-align: center;
+
+  height: 70vh;
+}
+#Entertainment h1,
+#Event h1 {
+  font-size: 8em;
+  padding-top: 2em;
 }
